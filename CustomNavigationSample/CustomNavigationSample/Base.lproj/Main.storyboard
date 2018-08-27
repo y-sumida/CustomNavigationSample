@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomNavigationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wVP-4d-kHZ">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PF3-ld-AG3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3JP-as-GLV">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="MZ8-6F-bpN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="8Af-zK-kUZ"/>
+                                    <constraint firstItem="3JP-as-GLV" firstAttribute="leading" secondItem="SQr-E4-X8V" secondAttribute="leading" id="Ccl-6Q-P2m"/>
+                                    <constraint firstItem="3JP-as-GLV" firstAttribute="bottom" secondItem="SQr-E4-X8V" secondAttribute="bottom" id="ZuL-Iu-cMc"/>
+                                    <constraint firstItem="3JP-as-GLV" firstAttribute="top" secondItem="SQr-E4-X8V" secondAttribute="top" id="hIE-Za-OUa"/>
+                                    <constraint firstItem="SQr-E4-X8V" firstAttribute="trailing" secondItem="3JP-as-GLV" secondAttribute="trailing" id="wti-dT-Jj9"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="SQr-E4-X8V"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wVP-4d-kHZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3GD-qD-3og"/>
+                            <constraint firstItem="PF3-ld-AG3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="D27-mq-DNu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wVP-4d-kHZ" secondAttribute="bottom" id="FZB-sR-6z7"/>
+                            <constraint firstItem="PF3-ld-AG3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Koe-Ap-40l"/>
+                            <constraint firstItem="PF3-ld-AG3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fUG-sG-XPI"/>
+                            <constraint firstItem="wVP-4d-kHZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tY6-Qi-Whr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wVP-4d-kHZ" secondAttribute="trailing" id="xxq-vW-Kvz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="customNavigationView" destination="PF3-ld-AG3" id="Evc-Qe-2UL"/>
+                        <outlet property="tableView" destination="wVP-4d-kHZ" id="Uyn-xc-cGz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>
